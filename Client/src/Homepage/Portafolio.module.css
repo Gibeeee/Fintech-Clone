@@ -1,0 +1,109 @@
+.lightTheme {
+    background-color: white;
+    display: grid;
+    width: 95%;
+    height: auto;
+    margin: 30px;
+    border: 4.5px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+.darkTheme {
+    color: white;
+    background-color: #474d56;
+    display: grid;
+    width: 98%;
+    height: auto;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+.darkTheme .Profile span {
+    color: white;
+}
+
+.Profile {
+    display: grid;
+    justify-content: center;
+    align-items: center;;
+    width: 100%;
+    height: auto;
+}
+
+.Profile span {
+    display: flex;
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    left: 5%;
+    color: #192936;
+}
+
+.Interested {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.Slider {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.FeaturedProject {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.Education {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ContactMe {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 1190px) {
+    .lightTheme {
+        width: 97%;
+        margin: 3px 0 0 10px;
+    }
+
+    .darkTheme {
+        width: 97%;
+        margin: 3px 0 0 10px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .lightTheme {
+        width: 96%;
+        margin: 3px 0 0 3px;
+    }
+
+    .darkTheme {
+        width: 96%;
+        margin: 3px 0 0 3px;
+    }
+    
+}

@@ -1,0 +1,312 @@
+.EducationContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    gap: 10px;
+    margin: 30px 0 30px;
+    align-items: center;
+}
+
+.sectionOne {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 97%;
+    height: 440px;
+    margin: 0 1% 0;
+    border: 6px solid greenyellow;
+    border-radius: 15px;
+}
+
+.sectionOne img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 0 20px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.Images {
+    margin-top: 30px;
+    width: 100%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-right: 3px solid black;
+}
+
+.Images :nth-child(5) {
+  animation: rotate 45s infinite linear;
+}
+
+.Experience {
+    margin-top: 30px;
+    width: 100%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.ExperienceTop span:nth-child(1) {
+    position: absolute;
+    right: 3%;
+    bottom: 1320px;
+}
+
+.sectionTwo {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 97%;
+    height: 300px;
+    margin: 0 1% 0;
+    border: 6px solid rgb(47, 141, 255);
+    border-radius: 15px;
+}
+
+.ExperienceTop {
+    margin-left: 30px;
+    border-bottom: 3px solid black;
+    max-height: 235px;
+    width: 90%;
+}
+
+.ExperienceTop h1 {
+    margin: 0 0 10px 0;
+}
+
+.ExperienceTop ul {
+    padding-left: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.ExperienceTop ul li{
+    padding-left: 10px;
+}
+
+.ExperienceBot {
+    margin-left: 30px;
+}
+
+.ExperienceBot h1 {
+    margin: 10px 0 0 0;
+}
+
+.ExperienceBot ul {
+    margin: 5px 0 0 0;
+}
+
+.ExperienceBot ul li{
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+   /* half code partition */
+
+.infoDGETI {
+    width: 100%;
+    height: 380px;
+}
+
+.imageDGETI img {
+    width: 250px;
+    height: 250px;
+    margin: 15px 0 0 20px;
+    object-fit: scale-down;
+    border: 2px solid white;
+    border-radius: 11px;
+    padding: 10px;
+}
+
+.infoDGETI h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.infoDGETI ul {
+    padding-left: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.infoDGETI ul li{
+    padding-left: 10px;
+}
+
+@media (max-width: 1120px) {
+    .ExperienceTop span:nth-child(1) {
+        bottom: 1280px;
+    }
+
+    .sectionOne img {
+        width: 80px;
+        height: 80px; 
+    }   
+
+    .infoDGETI h1 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .ExperienceTop ul {
+        padding-left: 20px;
+    }
+
+    .ExperienceBot ul {
+        padding-left: 20px;
+    }
+
+    .sectionOne img {
+        width: 60px;
+        height: 60px; 
+    }   
+
+    .sectionOne {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media (max-width: 915px) {
+
+    .ExperienceTop ul {
+        padding-left: 40px;
+    }
+
+    .ExperienceBot ul {
+        padding-left: 40px;
+    }
+
+    .ExperienceTop span:nth-child(1) {
+        bottom: 1218px;
+    }
+
+    .sectionOne {
+        grid-template-columns: auto;
+        height: 720px;
+        width: 96%;
+    }
+
+    .sectionOne img {
+        width: 100px;
+        height: 100px; 
+        margin: 0px 0 0 30%;
+    } 
+
+    .ExperienceTop {
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+        padding-top: 20px;
+        max-height: 335px;
+    }
+
+    .Images {
+        margin-top: 30px;
+        width: 100%;
+        height: 250px;
+        border-right: none;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .sectionTwo {
+        width: 96%;
+        grid-template-columns: auto;
+    }
+
+    .imageDGETI img {
+        display: none;
+    }
+    
+    .infoDGETI {
+        margin-left: 30px;
+        width: 96%;
+    }
+}
+
+@media (max-width: 733px) {
+
+    .Images {
+        height: 200px;
+    }
+
+    .sectionOne img {
+        width: 70px;
+        height: 70px; 
+        margin: 0px 0 0 25%;
+    } 
+
+    .ExperienceTop ul {
+        padding-left: 20px;
+    }
+
+    .ExperienceBot ul {
+        padding-left: 20px;
+    }
+
+    .ExperienceTop {
+        margin-left: 10px;
+        max-height: 435px;
+    }
+
+    .ExperienceBot {
+        margin-left: 10px;
+    }
+
+    .infoDGETI {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 656px) {
+    .ExperienceTop span:nth-child(1) {
+        bottom: 1515px;
+        left: 100px;
+        font-size: 30px;
+    }
+
+    .Images {
+        grid-template-columns: auto auto auto;
+        height: 350px;
+    }
+
+    .sectionOne {
+        height: 980px;
+    }
+
+    .sectionTwo {
+        height: 350px;
+    }
+
+    .infoDGETI ul {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 548px) {
+
+    .ExperienceTop span:nth-child(1) {
+        bottom: 1620px;
+        left: 70px;
+    }
+
+    .sectionOne {
+        height: 1120px;
+        width: 94%;
+    }
+
+    .sectionTwo {
+        height: 400px;
+        width: 94%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
