@@ -1,0 +1,157 @@
+.Characters {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: inherit 80%;
+    gap: 10px;
+    
+    height: 100%;
+}
+
+.Character_container {
+    display: grid;
+    width: 98%;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    gap: 30px;
+    place-items: center;
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 80px;
+}
+
+.Character_card {
+    width: 306px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.Character_img {
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.9);
+    height: 294px;
+    width: 301px;
+}
+
+.Character_info {
+    font-size: 30px;
+    color: #213547;
+    background-color: rgba(225, 225, 225, 0.6);
+    border: 6px solid rgba(12, 91, 129, 0.9);
+    border-radius: 25px;
+    position: absolute;
+    width: 296px;
+    height: 290px;
+    transition: .4s;
+    top: 300px;
+    z-index: 3;
+}
+
+#Humans {
+    color: #379237;
+}
+
+#Aliens {
+    color: #FF1E1E;
+}
+
+#Alive {
+    color: #2E4F4F;
+}
+
+#Dead {
+    color: #820000;
+}
+
+.Character_info h2:nth-child(2){
+    position: absolute;
+    top: 185px;
+}
+
+.Character_info h2:nth-child(3){
+    position: absolute;
+    top: 230px;
+}
+
+.Character_card:hover  .Character_info {
+    top: 0px;
+}
+
+.Character_card h2 {
+    margin: 0 0 0 10px;
+}
+
+.Search {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(2.7px);
+    top: 0px;
+    left: 0px;
+    border-bottom: 3px solid rgba(151, 33, 219, 0.8);
+}
+
+.Search::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(44, 103, 30, 0.318);
+    z-index: -1;
+}
+
+.Search input {
+    width: 200px;
+    height: 26px;
+    margin-left: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.Search span {
+    width: auto;
+    margin: 0 30px;
+    color: black;
+}
+
+.Search :nth-child(3) {
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.Search h1 {
+    margin: 15px 0;
+}
+
+@media (max-width: 571px) {
+    .Search span {
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .Search span {
+        display: none;
+    }
+    .Search input {
+        margin: 14px 5px;
+    }
+    .Search label {
+        margin-left: 10px;
+    }
+    .Search :nth-child(3) {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .Search input {
+        width: 50%;
+    }
+}

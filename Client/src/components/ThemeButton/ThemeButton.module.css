@@ -1,0 +1,41 @@
+.ButtonBoxLight {
+    position: fixed;
+    background-color: #526D82;
+    right: 3%;
+    top: 100px;
+    width: 54px;
+    height: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.ButtonBoxDark {
+    position: fixed;
+    background-color: #526D82;
+    right: 3%;
+    top: 100px;
+    width: 54px;
+    height: 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.ButtonBallLight {
+    position: relative;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: #FFED00;
+    left: 0px;
+    transition: .4s;
+}
+
+.ButtonBallDark {
+    position: relative;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: #27374D;
+    left: 34px;
+    transition: .4s;
+}

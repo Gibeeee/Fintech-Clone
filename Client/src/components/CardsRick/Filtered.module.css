@@ -1,0 +1,26 @@
+.Button_one {
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    top: 75px;
+    left: 20px;
+    z-index: 4;
+}
+
+.Button_two {
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    top: 75px;
+    left: 100px;
+    z-index: 4;
+}
+
+.Button_three {
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    z-index: 4;
+}
